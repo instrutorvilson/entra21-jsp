@@ -8,12 +8,13 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Consulta contatos</title>
+<%@ include file="./bootstrap.jsp" %>
 </head>
 <body>
     <nav>
-         include com os links
-    </nav>
-    <table>
+       <%@include file="./menu.jsp" %>
+   </nav>
+    <table class="table table-striped">
         <thead>
             <tr>
                <th>Id</th>
