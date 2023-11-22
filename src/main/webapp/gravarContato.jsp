@@ -10,7 +10,7 @@
    ContatoController cc = new ContatoController();
    
    if(cc.salvar(contato)){
-	   out.print("Contato salvo com sucesso");
+	   response.sendRedirect("./consultaContato.jsp");
    }
    
   // out.print("opa" + contato.toString());  
