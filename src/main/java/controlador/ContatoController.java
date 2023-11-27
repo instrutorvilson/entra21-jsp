@@ -11,5 +11,17 @@ public class ContatoController {
     	 return ok;
      }
      
+     public boolean editar(Contato contato) {   
+    	 /*regras de negocio*/
+    	 boolean ok = DaoContato.editar(contato);
+    	 return ok;
+     }
+     
+     public Contato consultarPorId(int id) {
+    	 Contato ct = DaoContato.consultar(id);
+    	 /*regras de negocio*/
+    	 return ct;
+     }
+     
      
 }
